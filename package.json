@@ -1,0 +1,20 @@
+{
+  "name": "phaser-parcel",
+  "version": "1.0.0",
+  "description": "Phaser project with parcel-bundler",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "watch": "parcel watch src/index.html",
+    "start": "parcel serve src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["phaser", "phaser3"],
+  "author": "samme",
+  "license": "ISC",
+  "dependencies": {
+    "colors.css": "^3.0.0",
+    "phaser": "^3.10.1"
+  },
+  "devDependencies": {}
+}
