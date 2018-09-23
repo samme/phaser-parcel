@@ -9,12 +9,15 @@
     "start": "parcel serve src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["phaser", "phaser3"],
+  "keywords": [
+    "phaser",
+    "phaser3"
+  ],
   "author": "samme",
   "license": "ISC",
   "dependencies": {
     "colors.css": "^3.0.0",
-    "phaser": "^3.10.1"
+    "phaser": "^3.13.0"
   },
   "devDependencies": {}
 }
