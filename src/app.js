@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import gameConfig from './app/gameConfig.js';
 
 let game;

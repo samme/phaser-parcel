@@ -1,3 +1,4 @@
+import Phaser from 'phaser';
 import colors from 'colors.css';
 
 export default {
