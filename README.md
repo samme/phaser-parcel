@@ -9,5 +9,18 @@ npm run watch # Auto-compile
 npm run build # Compile for production
 ```
 
-- [Parcel documentation](https://parceljs.org/getting_started.html)
-- Use [package.alias](https://github.com/parcel-bundler/parcel/pull/850#issue-169912979) for different Phaser builds
+See [Parcel: Getting Started](https://parceljs.org/getting_started.html) for more.
+
+Use [package.alias](https://parceljs.org/module_resolution.html#aliasing) to specify an alternative Phaser build, e.g.,
+
+```json
+{
+  "name": "my-phaser-game",
+  "alias": {
+    "phaser": "./node_modules/phaser/src/phaser-arcade-physics.js"
+  }
+}
+```
+
+- [Parcel documentation](https://parceljs.org/)
+- [Use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy), if you prefer
