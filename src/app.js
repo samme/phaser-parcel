@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import gameConfig from './app/gameConfig.js';
 
 function newGame () {
-  // if (game) return;
+  if (game) return;
   game = new Phaser.Game(gameConfig);
 }
 
