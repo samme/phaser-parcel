@@ -12,7 +12,7 @@ var stars;
 
 export default {
 
-  key: 'default',
+  key: 'play',
 
   physics: {
     default: 'arcade',

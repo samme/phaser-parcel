@@ -1,5 +1,5 @@
 import bootScene from './bootScene';
-import defaultScene from './defaultScene';
+import playScene from './playScene';
 import menuScene from './menuScene';
 import endScene from './endScene';
 
@@ -11,7 +11,7 @@ export default {
   title: 'Phaser 3 with Parcel 📦',
   url: 'https://github.com/samme/phaser-parcel',
   banner: { text: 'white', background: [ '#FD7400', '#FFE11A', '#BEDB39', '#1F8A70', '#004358' ] },
-  scene: [bootScene, menuScene, defaultScene, endScene],
+  scene: [bootScene, menuScene, playScene, endScene],
   callbacks: {
     preBoot: function (game) {
       game.registry.set('id', Date.now());
