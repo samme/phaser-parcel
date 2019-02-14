@@ -4,7 +4,7 @@
   "description": "Phaser project with parcel-bundler",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url './'",
     "watch": "parcel watch src/index.html",
     "start": "parcel serve src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
