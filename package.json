@@ -2,7 +2,7 @@
   "name": "phaser-parcel",
   "version": "1.0.0",
   "description": "Phaser project with parcel-bundler",
-  "main": "index.js",
+  "main": "src/index.html",
   "scripts": {
     "build": "parcel build src/index.html --public-url './'",
     "watch": "parcel watch src/index.html",
