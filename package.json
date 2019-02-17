@@ -1,7 +1,7 @@
 {
   "name": "phaser-parcel",
   "version": "1.0.0",
-  "description": "Phaser project with parcel-bundler",
+  "description": "A Phaser 3 game template using Parcel bundler",
   "main": "src/index.html",
   "scripts": {
     "build": "parcel build src/index.html --public-url './'",
