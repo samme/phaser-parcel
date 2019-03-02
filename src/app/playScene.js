@@ -87,7 +87,7 @@ export default {
 
   update: function () {
     if (gameOver) {
-      this.scene.start('end');
+      this.scene.stop().run('end');
 
       return;
     }

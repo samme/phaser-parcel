@@ -14,7 +14,7 @@ export default {
     })
       .setOrigin(0.5, 0);
     this.input.on('pointerdown', function () {
-      this.scene.start('menu');
+      this.scene.switch('menu');
     }, this);
     this.cameras.main.flash(500, 255, 0, 0);
   }
