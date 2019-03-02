@@ -46,6 +46,7 @@ export default {
   update: function () {
     this.scene.start('menu');
     // this.scene.start('play');
+    this.scene.remove();
   }
 
 };
