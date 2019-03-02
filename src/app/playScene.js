@@ -28,7 +28,6 @@ export default {
   },
 
   create: function () {
-
     //  A simple background for our game
     this.add.image(400, 300, 'sky');
 
@@ -84,7 +83,6 @@ export default {
     this.physics.add.overlap(player, stars, this.collectStar, null, this);
 
     this.physics.add.collider(player, bombs, this.hitBomb, null, this);
-
   },
 
   update: function () {
