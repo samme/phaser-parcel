@@ -53,7 +53,7 @@ export default {
     //  Input Events
     cursors = this.input.keyboard.createCursorKeys();
 
-    this.input.keyboard.on('keydown_R', function () {
+    this.input.keyboard.on('keydown-R', function () {
       this.scene.restart();
     }, this);
 
