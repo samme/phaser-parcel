@@ -1,5 +1,3 @@
-import colors from 'colors.css';
-
 export default {
 
   key: 'menu',
@@ -8,7 +6,7 @@ export default {
     this.add.image(400, 150, 'star').setScale(5);
     this.add.text(400, 300, 'Phaser 3 with Parcel\n\n(play)', {
       align: 'center',
-      fill: colors.lime,
+      fill: 'lime',
       fontFamily: 'sans-serif',
       fontSize: 48
     })

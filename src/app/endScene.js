@@ -1,5 +1,3 @@
-import colors from 'colors.css';
-
 export default {
 
   key: 'end',
@@ -8,7 +6,7 @@ export default {
     this.add.image(400, 150, 'bomb').setScale(5);
     this.add.text(400, 300, 'Game Over\n\n(menu)', {
       align: 'center',
-      fill: colors.red,
+      fill: 'red',
       fontFamily: 'sans-serif',
       fontSize: 48
     })

@@ -1,5 +1,4 @@
 import Phaser from 'phaser';
-import colors from 'colors.css';
 
 var bombs;
 var cursors;
@@ -72,7 +71,7 @@ export default {
     bombs = this.physics.add.group();
 
     //  The score
-    scoreText = this.add.text(10, 540, 'Score: 0', { fontSize: 32, fontFamily: 'sans-serif', fill: colors.yellow });
+    scoreText = this.add.text(10, 540, 'Score: 0', { fontSize: 32, fontFamily: 'sans-serif', fill: 'yellow' });
 
     //  Collide the player and the stars with the platforms
     this.physics.add.collider(player, platforms);
