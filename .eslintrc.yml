@@ -1,4 +1,4 @@
-extends: 'semistandard'
+extends: semistandard
 env:
   browser: true
   es6: true
