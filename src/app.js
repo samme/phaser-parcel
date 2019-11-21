@@ -1,9 +1,10 @@
-import Phaser from 'phaser';
+import './app/plugins';
+import Game from 'phaser/src/core/Game';
 import gameConfig from './app/gameConfig.js';
 
 function newGame () {
   if (game) return;
-  game = new Phaser.Game(gameConfig);
+  game = new Game(gameConfig);
 }
 
 function destroyGame () {

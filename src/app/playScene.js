@@ -1,4 +1,5 @@
-import Phaser from 'phaser';
+import Between from 'phaser/src/math/Between';
+import FloatBetween from 'phaser/src/math/FloatBetween';
 
 var bombs;
 var cursors;
@@ -65,7 +66,7 @@ export default {
 
     stars.children.iterate(function (child) {
       //  Give each star a slightly different bounce
-      child.setBounceY(Phaser.Math.FloatBetween(0.25, 0.75));
+      child.setBounceY(FloatBetween(0.25, 0.75));
     });
 
     bombs = this.physics.add.group();
@@ -137,12 +138,12 @@ export default {
         child.enableBody(true, child.x, 0, true, true);
       });
 
-      var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+      var x = (player.x < 400) ? Between(400, 800) : Between(0, 400);
 
       var bomb = bombs.create(x, 16, 'bomb');
       bomb.setBounce(1);
       bomb.setCollideWorldBounds(true);
-      bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
+      bomb.setVelocity(Between(-200, 200), 20);
       bomb.setAngularVelocity(360);
       bomb.allowGravity = false;
     }

@@ -1,0 +1,17 @@
+import 'phaser/src/cameras/2d/CameraManager';
+import 'phaser/src/events/EventEmitter';
+// import 'phaser/src/gameobjects';
+import 'phaser/src/gameobjects/image/ImageFactory';
+import 'phaser/src/gameobjects/DisplayList';
+import 'phaser/src/gameobjects/GameObjectCreator';
+import 'phaser/src/gameobjects/GameObjectFactory';
+import 'phaser/src/gameobjects/graphics/GraphicsFactory';
+import 'phaser/src/gameobjects/text/static/TextFactory';
+import 'phaser/src/gameobjects/UpdateList';
+import 'phaser/src/input/InputPlugin';
+import 'phaser/src/input/keyboard/KeyboardPlugin';
+import 'phaser/src/loader/filetypes/ImageFile';
+import 'phaser/src/loader/filetypes/SpriteSheetFile';
+import 'phaser/src/loader/LoaderPlugin';
+import 'phaser/src/physics/arcade/ArcadePhysics';
+import 'phaser/src/scene/ScenePlugin';

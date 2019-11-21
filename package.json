@@ -4,9 +4,9 @@
   "description": "A Phaser 3 game template using Parcel bundler",
   "main": "src/index.html",
   "scripts": {
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ --detailed-report --no-source-maps",
     "watch": "parcel watch src/index.html",
-    "start": "parcel serve src/index.html",
+    "start": "parcel serve src/index.html --log-level 1",
     "clean": "rm -v dist/*",
     "test": "eslint src"
   },
@@ -27,6 +27,7 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "parcel-plugin-bundle-visualiser": "^1.2.0"
   }
 }

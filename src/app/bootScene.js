@@ -1,4 +1,4 @@
-import Phaser from 'phaser';
+import Rectangle from 'phaser/src/geom/rectangle';
 
 export default {
 
@@ -10,7 +10,7 @@ export default {
     this.load.image('star', require('../assets/star.png'));
     this.load.image('bomb', require('../assets/bomb.png'));
     this.load.spritesheet('dude', require('../assets/dude.png'), { frameWidth: 32, frameHeight: 48 });
-    var rect = new Phaser.Geom.Rectangle(200, 285, 400, 30);
+    var rect = new Rectangle(200, 285, 400, 30);
     var gfx = this.add.graphics();
     this.load.on('progress', function (progress) {
       gfx
