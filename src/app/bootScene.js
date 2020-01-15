@@ -43,7 +43,9 @@ export default {
       frameRate: 10,
       repeat: -1
     });
+  },
 
+  update: function () {
     this.scene.start('menu');
     // this.scene.start('play');
     // this.scene.remove();
