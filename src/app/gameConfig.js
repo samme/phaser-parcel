@@ -1,10 +1,11 @@
+import { AUTO } from 'phaser/src/const';
 import bootScene from './bootScene';
 import playScene from './playScene';
 import menuScene from './menuScene';
 import endScene from './endScene';
 
 export default {
-  type: 0,
+  type: AUTO,
   width: 800,
   height: 600,
   pixelArt: true,
