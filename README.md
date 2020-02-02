@@ -42,19 +42,10 @@ See [bootScene](./src/app/bootScene.js) for an example.
 
 If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy) instead.
 
-Package aliasing
-----------------
+Phaser
+------
 
-You can use [package.alias](https://parceljs.org/module_resolution.html#aliasing) to specify an alternative Phaser build, e.g.,
-
-```json
-{
-  "name": "my-phaser-game",
-  "alias": {
-    "phaser": "./node_modules/phaser/src/phaser-arcade-physics.js"
-  }
-}
-```
+Import what you need. See [./src/app/plugins.js].
 
 Hot reload
 ----------
