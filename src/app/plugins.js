@@ -10,6 +10,7 @@ import 'phaser/src/gameobjects/text/static/TextFactory';
 import 'phaser/src/gameobjects/UpdateList';
 import 'phaser/src/input/InputPlugin';
 import 'phaser/src/input/keyboard/KeyboardPlugin';
+// import 'phaser/src/loader';
 import 'phaser/src/loader/filetypes/ImageFile';
 import 'phaser/src/loader/filetypes/SpriteSheetFile';
 import 'phaser/src/loader/LoaderPlugin';
