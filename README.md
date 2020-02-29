@@ -47,7 +47,7 @@ If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.co
 Phaser
 ------
 
-Import what you need. See [./src/app/plugins.js].
+Import what you need. See [src/app/plugins](./src/app/plugins.js).
 
 Hot reload
 ----------
