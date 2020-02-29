@@ -14,6 +14,10 @@ Use
 # If you don't have Parcel, install it:
 npm install -g parcel-bundler
 
+# Clone or download this repo
+# Install:
+npm install
+
 # Auto-compile and run dev server:
 npm run start
 
@@ -21,9 +25,7 @@ npm run start
 npm run build
 ```
 
-You can edit these scripts in [package.json](./package.json) to suit your needs.
-
-See:
+You can edit these scripts in [package.json](./package.json) to suit your needs. See:
 
 - [Parcel: Getting Started](https://parceljs.org/getting_started.html)
 - [Parcel: Production](https://parceljs.org/production.html)

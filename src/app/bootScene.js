@@ -1,24 +1,18 @@
-import Rectangle from 'phaser/src/geom/rectangle';
-
 export default {
 
   key: 'boot',
 
   preload: function () {
+    var bg = this.add.rectangle(400, 300, 400, 30, 0x666666);
+    var bar = this.add.rectangle(bg.x, bg.y, bg.width, bg.height, 0xffffff).setScale(0, 1);
+
     this.load.image('sky', require('../assets/sky.png'));
     this.load.image('ground', require('../assets/platform.png'));
     this.load.image('star', require('../assets/star.png'));
     this.load.image('bomb', require('../assets/bomb.png'));
     this.load.spritesheet('dude', require('../assets/dude.png'), { frameWidth: 32, frameHeight: 48 });
-    var rect = new Rectangle(200, 285, 400, 30);
-    var gfx = this.add.graphics();
     this.load.on('progress', function (progress) {
-      gfx
-        .clear()
-        .fillStyle(0x666666)
-        .fillRectShape(rect)
-        .fillStyle(0xffffff)
-        .fillRect(rect.x, rect.y, progress * rect.width, rect.height);
+      bar.setScale(progress, 1);
     });
   },
 
@@ -43,7 +37,9 @@ export default {
       frameRate: 10,
       repeat: -1
     });
+  },
 
+  update: function () {
     this.scene.start('menu');
     // this.scene.start('play');
     // this.scene.remove();
