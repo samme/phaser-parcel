@@ -58,6 +58,12 @@ You can use [package.alias](https://parceljs.org/module_resolution.html#aliasing
 }
 ```
 
+Custom Phaser
+-------------
+
+See the [imports branch](https://github.com/samme/phaser-parcel/tree/imports).
+
+
 Hot reload
 ----------
 
