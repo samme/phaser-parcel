@@ -1,9 +1,7 @@
 Phaser 3 with Parcel
 ====================
 
-[Parcel is a fast, zero-config web application bundler](https://parceljs.org).
-
-This is a simple Phaser game template using Parcel, and based on [Making your first Phaser 3 game](https://phaser.io/tutorials/making-your-first-phaser-3-game).
+This is a simple Phaser game template using [Parcel](https://parceljs.org), and based on [Making your first Phaser 3 game](https://phaser.io/tutorials/making-your-first-phaser-3-game).
 
 Most common transformations ([CoffeeScript](https://parceljs.org/coffeeScript.html), [Babel/Flow](https://parceljs.org/javascript.html), [TypeScript](https://parceljs.org/typeScript.html)) work “out of the box”.
 
