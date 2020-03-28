@@ -9,24 +9,26 @@ var score;
 var scoreText;
 var stars;
 
-export default {
+export default class PlayScene extends Phaser.Scene {
+  constructor () {
+    super({
+      key: 'play',
+      physics: {
+        default: 'arcade',
+        arcade: {
+          gravity: { y: 300 },
+          debug: false
+        }
+      }
+    });
+  }
 
-  key: 'play',
-
-  physics: {
-    default: 'arcade',
-    arcade: {
-      gravity: { y: 300 },
-      debug: false
-    }
-  },
-
-  init: function () {
+  init () {
     gameOver = false;
     score = 0;
-  },
+  }
 
-  create: function () {
+  create () {
     //  A simple background for our game
     this.add.image(400, 300, 'sky');
 
@@ -82,9 +84,9 @@ export default {
     this.physics.add.overlap(player, stars, this.collectStar, null, this);
 
     this.physics.add.collider(player, bombs, this.hitBomb, null, this);
-  },
+  }
 
-  update: function () {
+  update () {
     if (gameOver) {
       this.scene.stop().run('end');
 
@@ -107,46 +109,41 @@ export default {
     if (cursors.up.isDown && blocked.down && !blocked.up) {
       player.setVelocityY(-330);
     }
-  },
-
-  extend: {
-
-    collectStar: function (player, star) {
-      star.disableBody(true, true);
-
-      //  Add and update the score
-      score += 10;
-      scoreText.setText('Score: ' + score);
-
-      if (stars.countActive(true) === 0) {
-        this.nextRound();
-      }
-    },
-
-    hitBomb: function (player, bomb) {
-      this.physics.pause();
-      bomb.setTintFill(0xff0000);
-      player.setTintFill(0xff0000);
-      player.anims.play('turn');
-      gameOver = true;
-    },
-
-    nextRound: function () {
-      //  A new batch of stars to collect
-      stars.children.iterate(function (child) {
-        child.enableBody(true, child.x, 0, true, true);
-      });
-
-      var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
-
-      var bomb = bombs.create(x, 16, 'bomb');
-      bomb.setBounce(1);
-      bomb.setCollideWorldBounds(true);
-      bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
-      bomb.setAngularVelocity(360);
-      bomb.allowGravity = false;
-    }
-
   }
 
-};
+  collectStar (player, star) {
+    star.disableBody(true, true);
+
+    //  Add and update the score
+    score += 10;
+    scoreText.setText('Score: ' + score);
+
+    if (stars.countActive(true) === 0) {
+      this.nextRound();
+    }
+  }
+
+  hitBomb (player, bomb) {
+    this.physics.pause();
+    bomb.setTintFill(0xff0000);
+    player.setTintFill(0xff0000);
+    player.anims.play('turn');
+    gameOver = true;
+  }
+
+  nextRound () {
+    //  A new batch of stars to collect
+    stars.children.iterate(function (child) {
+      child.enableBody(true, child.x, 0, true, true);
+    });
+
+    var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+
+    var bomb = bombs.create(x, 16, 'bomb');
+    bomb.setBounce(1);
+    bomb.setCollideWorldBounds(true);
+    bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
+    bomb.setAngularVelocity(360);
+    bomb.allowGravity = false;
+  }
+}

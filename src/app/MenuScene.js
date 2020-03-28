@@ -1,8 +1,11 @@
-export default {
+import Phaser from 'phaser';
 
-  key: 'menu',
+export default class MenuScene extends Phaser.Scene {
+  constructor () {
+    super({ key: 'menu' });
+  }
 
-  create: function () {
+  create () {
     this.add.image(400, 150, 'star').setScale(5);
     this.add.text(400, 300, 'Phaser 3 with Parcel\n\n< play >', {
       align: 'center',
@@ -15,5 +18,4 @@ export default {
       this.scene.switch('play');
     }, this);
   }
-
-};
+}

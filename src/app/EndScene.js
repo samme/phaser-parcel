@@ -1,8 +1,11 @@
-export default {
+import Phaser from 'phaser';
 
-  key: 'end',
+export default class EndScene extends Phaser.Scene {
+  constructor () {
+    super({ key: 'end' });
+  }
 
-  create: function () {
+  create () {
     this.add.image(400, 150, 'bomb').setScale(5);
     this.add.text(400, 300, 'Game Over\n\n< menu >', {
       align: 'center',
@@ -16,5 +19,4 @@ export default {
     }, this);
     this.cameras.main.flash(500, 255, 0, 0);
   }
-
-};
+}

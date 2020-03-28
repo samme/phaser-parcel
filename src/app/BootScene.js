@@ -1,8 +1,11 @@
-export default {
+import Phaser from 'phaser';
 
-  key: 'boot',
+export default class BootScene extends Phaser.Scene {
+  constructor () {
+    super({ key: 'boot' });
+  }
 
-  preload: function () {
+  preload () {
     var bg = this.add.rectangle(400, 300, 400, 30, 0x666666);
     var bar = this.add.rectangle(bg.x, bg.y, bg.width, bg.height, 0xffffff).setScale(0, 1);
 
@@ -15,9 +18,9 @@ export default {
     this.load.on('progress', function (progress) {
       bar.setScale(progress, 1);
     });
-  },
+  }
 
-  create: function () {
+  create () {
     //  Our player animations, turning, walking left and walking right.
     this.anims.create({
       key: 'left',
@@ -38,11 +41,11 @@ export default {
       frameRate: 10,
       repeat: -1
     });
-  },
+  }
 
-  update: function () {
+  update () {
     this.scene.start('menu');
     // this.scene.start('play');
     // this.scene.remove();
   }
-};
+}
