@@ -1,4 +1,4 @@
-import './app/plugins';
+import './plugins';
 import Game from 'phaser/src/core/Game';
 import gameConfig from './gameConfig.js';
 

@@ -42,16 +42,10 @@ See [BootScene](./src/BootScene.js) for an example.
 
 If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy) instead.
 
-Phaser
-------
-
-Import what you need. See [src/app/plugins](./src/app/plugins.js).
-
 Custom Phaser
 -------------
 
-See the [imports branch](https://github.com/samme/phaser-parcel/tree/imports).
-
+Import what you need. See [src/plugins](./src/plugins.js).
 
 Hot reload
 ----------
