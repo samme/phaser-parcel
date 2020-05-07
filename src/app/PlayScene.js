@@ -35,6 +35,9 @@ export default class PlayScene extends Phaser.Scene {
         this.scene.restart();
       }, this)
       .on('keydown-Q', function () {
+        this.scene.stop().run('menu');
+      }, this)
+      .on('keydown-K', function () {
         this.scene.stop().run('end');
       }, this);
   }

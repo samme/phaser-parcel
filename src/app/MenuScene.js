@@ -6,8 +6,6 @@ export default class MenuScene extends Phaser.Scene {
   }
 
   create () {
-    this.add.image(400, 150, 'logo');
-
     this.add.text(400, 300, 'Phaser 3 with Parcel\n\n< play >', {
       align: 'center',
       fill: 'lime',
