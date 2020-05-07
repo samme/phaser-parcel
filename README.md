@@ -1,9 +1,7 @@
 Phaser 3 with Parcel
 ====================
 
-This is a simple Phaser game template using [Parcel](https://parceljs.org), and based on [Making your first Phaser 3 game](https://phaser.io/tutorials/making-your-first-phaser-3-game).
-
-Most common transformations ([CoffeeScript](https://parceljs.org/coffeeScript.html), [Babel/Flow](https://parceljs.org/javascript.html), [TypeScript](https://parceljs.org/typeScript.html)) work “out of the box”.
+This is a simple Phaser game template using [Parcel](https://parceljs.org). Most common transformations ([CoffeeScript](https://parceljs.org/coffeeScript.html), [Babel/Flow](https://parceljs.org/javascript.html), [TypeScript](https://parceljs.org/typeScript.html)) work “out of the box”.
 
 Use
 ---
@@ -12,8 +10,8 @@ Use
 # If you don't have Parcel, install it:
 npm install -g parcel-bundler
 
-# Clone or download this repo
-# Install:
+# Clone or download this repo.
+# From the project directory, install:
 npm install
 
 # Auto-compile and run dev server:
@@ -32,13 +30,15 @@ You can edit these scripts in [package.json](./package.json) to suit your needs.
 Game assets
 -----------
 
-Static assets used in your JavaScript need to be imported or required:
+Static assets used in your JavaScript must be imported:
 
 ```javascript
-require('../assets/sky.png') // -> './sky.8fef0675.png'
+import space from './assets/space.png'); // -> './space.89e3a46b.png'
+// OR
+import images from './assets/*.png'; // -> { space: './space.89e3a46b.png', … }
 ```
 
-See [bootScene](./src/app/bootScene.js) for an example.
+See [BootScene](./src/BootScene.js) for an example.
 
 If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy) instead.
 

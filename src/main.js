@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import gameConfig from './app/gameConfig.js';
+import gameConfig from './gameConfig.js';
 
 function newGame () {
   if (game) return;
