@@ -12,7 +12,7 @@ export default class BootScene extends Phaser.Scene {
 
     console.table(images);
 
-    this.load.image('sky', images.space3);
+    this.load.image('space', images.space);
     this.load.image('logo', images.logo);
     this.load.image('red', images.red);
 

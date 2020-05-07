@@ -14,7 +14,7 @@ export default class PlayScene extends Phaser.Scene {
   }
 
   create () {
-    this.add.image(400, 300, 'sky');
+    this.add.image(400, 300, 'space');
 
     var emitter = this.add.particles('red')
       .createEmitter({
