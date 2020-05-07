@@ -1,8 +1,8 @@
 import { AUTO } from 'phaser/src/const';
-import bootScene from './bootScene';
-import playScene from './playScene';
-import menuScene from './menuScene';
-import endScene from './endScene';
+import BootScene from './BootScene';
+import PlayScene from './PlayScene';
+import MenuScene from './MenuScene';
+import EndScene from './EndScene';
 
 export default {
   type: AUTO,
@@ -12,6 +12,6 @@ export default {
   title: 'Phaser 3 with Parcel 🚢 (imports)',
   url: 'https://github.com/samme/phaser-parcel',
   banner: { text: 'white', background: ['#FD7400', '#FFE11A', '#BEDB39', '#1F8A70', '#004358'] },
-  scene: [bootScene, menuScene, playScene, endScene],
+  scene: [BootScene, MenuScene, PlayScene, EndScene],
   audio: { noAudio: true }
 };
