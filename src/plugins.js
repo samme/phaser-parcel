@@ -19,6 +19,7 @@ import 'phaser/src/gameobjects/GameObjectFactory';
 // Import the factories you need.
 import 'phaser/src/gameobjects/image/ImageFactory';
 import 'phaser/src/gameobjects/shape/rectangle/RectangleFactory';
+import 'phaser/src/gameobjects/particles/ParticleManagerFactory';
 import 'phaser/src/gameobjects/text/static/TextFactory';
 
 // Input
