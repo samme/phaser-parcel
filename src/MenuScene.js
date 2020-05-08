@@ -1,6 +1,6 @@
-import Phaser from 'phaser';
+import Scene from 'phaser/src/scene/Scene';
 
-export default class MenuScene extends Phaser.Scene {
+export default class MenuScene extends Scene {
   constructor () {
     super({ key: 'menu' });
   }

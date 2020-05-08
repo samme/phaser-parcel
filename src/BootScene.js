@@ -1,7 +1,7 @@
-import Phaser from 'phaser';
+import Scene from 'phaser/src/scene/Scene';
 import images from './assets/*.png';
 
-export default class BootScene extends Phaser.Scene {
+export default class BootScene extends Scene {
   constructor () {
     super({ key: 'boot' });
   }

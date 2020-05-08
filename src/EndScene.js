@@ -1,6 +1,6 @@
-import Phaser from 'phaser';
+import Scene from 'phaser/src/scene/Scene';
 
-export default class EndScene extends Phaser.Scene {
+export default class EndScene extends Scene {
   constructor () {
     super({ key: 'end' });
   }
