@@ -73,3 +73,7 @@ If you don't like [hot reload](https://parceljs.org/hmr.html) at all, you can tu
 parcel serve src/index.html --no-hmr
 ```
 
+More Phaser with Parcel
+-----------------------
+
+- [phaser3-parcel-template](https://github.com/ourcade/phaser3-parcel-template)
