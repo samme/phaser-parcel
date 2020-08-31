@@ -40,7 +40,7 @@ import images from './assets/*.png'; // -> { space: './space.89e3a46b.png', … 
 
 See [BootScene](./src/BootScene.js) for an example.
 
-If you prefer, you can [use a plugin to copy static assets](https://www.npmjs.com/search?q=parcel%20plugin%20copy) instead.
+If you prefer, you can [use a plugin to copy static assets](https://github.com/elwin013/parcel-plugin-static-files-copy 'parcel-plugin-static-files-copy') instead.
 
 Package aliasing
 ----------------
