@@ -1,4 +1,3 @@
-import Phaser from 'phaser';
 import BootScene from './BootScene';
 import PlayScene from './PlayScene';
 import MenuScene from './MenuScene';
