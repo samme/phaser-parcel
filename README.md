@@ -42,25 +42,14 @@ See [BootScene](./src/BootScene.js) for an example.
 
 If you prefer, you can [use a plugin to copy static assets](https://github.com/elwin013/parcel-plugin-static-files-copy 'parcel-plugin-static-files-copy') instead.
 
-Package aliasing
-----------------
+Phaser
+------
 
-You can use [package.alias](https://parceljs.org/module_resolution.html#aliasing) to specify an alternative Phaser build, e.g.,
+Phaser is included by CDN script, in [src/index.html](src/index.html).
 
-```json
-{
-  "name": "my-phaser-game",
-  "alias": {
-    "phaser": "./node_modules/phaser/src/phaser-arcade-physics.js"
-  }
-}
-```
+You can choose from the [dist builds](https://www.jsdelivr.com/package/npm/phaser?path=dist).
 
-Custom Phaser
--------------
-
-See the [imports branch](https://github.com/samme/phaser-parcel/tree/imports).
-
+Use `phaser.min.js` when building for production.
 
 Hot reload
 ----------
