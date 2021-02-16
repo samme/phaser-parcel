@@ -10,7 +10,7 @@ Use
 # If you don't have Parcel, install it:
 npm install -g parcel-bundler
 
-# Clone or download this repo.
+# Clone or download this repo or its template <https://github.com/samme/phaser-parcel/generate>
 # From the project directory, install:
 npm install
 
