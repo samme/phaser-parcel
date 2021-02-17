@@ -1,5 +1,9 @@
+// These imports work in phaser@3.22.0
+
 // Core plugins
 // ------------
+
+// Always required.
 
 import 'phaser/src/cameras/2d/CameraManager';
 import 'phaser/src/events/EventEmitter';
@@ -10,40 +14,51 @@ import 'phaser/src/scene/ScenePlugin';
 // Game Objects
 // ------------
 
-// Import all game objects (best for a new project):
-// import 'phaser/src/gameobjects';
+// (a) New project: import all game objects, creators, and factories
+import 'phaser/src/gameobjects';
 
-// Required for `this.add`:
-import 'phaser/src/gameobjects/GameObjectFactory';
+// (b) Mature project:
 
-// Import the factories you need.
-import 'phaser/src/gameobjects/image/ImageFactory';
-import 'phaser/src/gameobjects/shape/rectangle/RectangleFactory';
-import 'phaser/src/gameobjects/particles/ParticleManagerFactory';
-import 'phaser/src/gameobjects/text/static/TextFactory';
+// `this.make`:
+// import 'phaser/src/gameobjects/GameObjectCreator';
+
+// `this.add`:
+// import 'phaser/src/gameobjects/GameObjectFactory';
+
+// Any required creators or factories.
+// import 'phaser/src/gameobjects/image/ImageCreator';
+// import 'phaser/src/gameobjects/image/ImageFactory';
 
 // Input
 // -----
 
 import 'phaser/src/input/InputPlugin';
+// import 'phaser/src/input/gamepad/GamepadPlugin.js';
 import 'phaser/src/input/keyboard/KeyboardPlugin';
 
 // Loader
 // ------
 
-// Import loader and all file types (best for a new project):
-// import 'phaser/src/loader';
+// (a) New project: import loader and all file types
+import 'phaser/src/loader';
 
-// Required to load anything:
-import 'phaser/src/loader/LoaderPlugin';
+// (b) Mature project:
 
-// Import the file types you need.
-import 'phaser/src/loader/filetypes/ImageFile';
+// Required for any loading.
+// import 'phaser/src/loader/LoaderPlugin';
+
+// Any required file types.
+// import 'phaser/src/loader/filetypes/ImageFile';
 
 // Scene plugins
 // -------------
 
-// Import the scene plugins you need (see Phaser.Plugins.DefaultPlugins.DefaultScene).
+// Import the scene plugins you need
 
-// Arcade Physics factories and game objects are here as well.
-import 'phaser/src/physics/arcade/ArcadePhysics';
+import 'phaser/src/data/DataManagerPlugin.js';
+import 'phaser/src/gameobjects/lights/LightsPlugin.js';
+import 'phaser/src/physics/arcade/ArcadePhysics.js';
+import 'phaser/src/physics/impact/ImpactPhysics.js';
+import 'phaser/src/physics/matter-js/MatterPhysics.js';
+import 'phaser/src/time/Clock.js';
+import 'phaser/src/tweens/TweenManager.js';
