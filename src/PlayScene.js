@@ -14,16 +14,14 @@ export default class PlayScene extends Phaser.Scene {
   }
 
   create () {
-    this.add.image(400, 300, 'space');
-
-    var emitter = this.add.particles('red')
+    var emitter = this.add.particles('atlas', 'particle1')
       .createEmitter({
         speed: 100,
         scale: { start: 1, end: 0 },
         blendMode: 'ADD'
       });
 
-    var logo = this.physics.add.image(400, 100, 'logo')
+    var logo = this.physics.add.image(400, 100, 'atlas', 'phaser1')
       .setVelocity(100, 200)
       .setBounce(1, 1)
       .setCollideWorldBounds(true);

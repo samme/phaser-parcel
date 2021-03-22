@@ -1,5 +1,16 @@
 import Phaser from 'phaser';
-import images from './assets/*.png';
+import atlasJson from './assets/tp3-multi-atlas.json';
+import pngs from './assets/*.png';
+
+console.log(atlasJson);
+console.log(pngs);
+
+for (const texture of atlasJson.textures) {
+  console.assert(pngs[`${texture.image.split('.')[0]}`], `${texture.image.split('.')[0]}`);
+  texture.image = pngs[`${texture.image.split('.')[0]}`];
+
+  console.log(texture);
+}
 
 export default class BootScene extends Phaser.Scene {
   constructor () {
@@ -7,18 +18,10 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload () {
-    var bg = this.add.rectangle(400, 300, 400, 30, 0x666666);
-    var bar = this.add.rectangle(bg.x, bg.y, bg.width, bg.height, 0xffffff).setScale(0, 1);
-
-    console.table(images);
-
-    this.load.image('space', images.space);
-    this.load.image('logo', images.logo);
-    this.load.image('red', images.red);
-
-    this.load.on('progress', function (progress) {
-      bar.setScale(progress, 1);
-    });
+    this.load.multiatlas('atlas', atlasJson);
+    this.load.once('complete', function () {
+      console.log('atlas', this.textures.get('atlas').getFrameNames());
+    }, this);
   }
 
   update () {
