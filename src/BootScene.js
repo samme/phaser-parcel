@@ -6,10 +6,11 @@ console.log(atlasJson);
 console.log(pngs);
 
 for (const texture of atlasJson.textures) {
-  console.assert(pngs[`${texture.image.split('.')[0]}`], `${texture.image.split('.')[0]}`);
-  texture.image = pngs[`${texture.image.split('.')[0]}`];
+  const { image } = texture;
 
-  console.log(texture);
+  texture.image = pngs[`${image.split('.')[0]}`];
+
+  console.log(image, texture.image);
 }
 
 export default class BootScene extends Phaser.Scene {
