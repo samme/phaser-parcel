@@ -1,4 +1,4 @@
-// These imports work in phaser@3.22.0
+// These imports work in phaser@3.55.2
 
 // Core plugins
 // ------------
@@ -55,10 +55,20 @@ import 'phaser/src/loader';
 
 // Import the scene plugins you need
 
+// `this.data`
 import 'phaser/src/data/DataManagerPlugin.js';
+
+// `this.lights`
 import 'phaser/src/gameobjects/lights/LightsPlugin.js';
+
+// `this.physics`
 import 'phaser/src/physics/arcade/ArcadePhysics.js';
-import 'phaser/src/physics/impact/ImpactPhysics.js';
+
+// `this.matter`
 import 'phaser/src/physics/matter-js/MatterPhysics.js';
+
+// ``this.time`
 import 'phaser/src/time/Clock.js';
+
+// `this.tweens`
 import 'phaser/src/tweens/TweenManager.js';
