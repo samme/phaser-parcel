@@ -14,10 +14,10 @@ import 'phaser/src/scene/ScenePlugin';
 // Game Objects
 // ------------
 
-// (a) New project: import all game objects, creators, and factories
+// All game objects, creators, and factories
 import 'phaser/src/gameobjects';
 
-// (b) Mature project:
+// OR
 
 // `this.make`:
 // import 'phaser/src/gameobjects/GameObjectCreator';
@@ -39,12 +39,12 @@ import 'phaser/src/input/keyboard/KeyboardPlugin';
 // Loader
 // ------
 
-// (a) New project: import loader and all file types
+// Loader plugin and all file types
 import 'phaser/src/loader';
 
-// (b) Mature project:
+// OR
 
-// Required for any loading.
+// Loader plugin, required for any loading.
 // import 'phaser/src/loader/LoaderPlugin';
 
 // Any required file types.
