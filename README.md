@@ -33,7 +33,7 @@ Game assets
 Static assets used in your JavaScript must be imported:
 
 ```javascript
-import space from './assets/space.png'); // -> './space.89e3a46b.png'
+import space from './assets/space.png'; // -> './space.89e3a46b.png'
 // OR
 import images from './assets/*.png'; // -> { space: './space.89e3a46b.png', … }
 ```
