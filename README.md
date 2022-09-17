@@ -33,14 +33,14 @@ Game assets
 Static assets used in your JavaScript must be imported:
 
 ```javascript
-import space from './assets/space.png'); // -> './space.89e3a46b.png'
+import space from './assets/space.png'; // -> './space.89e3a46b.png'
 // OR
 import images from './assets/*.png'; // -> { space: './space.89e3a46b.png', … }
 ```
 
 See [BootScene](./src/BootScene.js) for an example.
 
-If you prefer, you can [use a plugin to copy static assets](https://github.com/elwin013/parcel-plugin-static-files-copy 'parcel-plugin-static-files-copy') instead.
+If you prefer, you can [use a parcel plugin to copy static assets](https://github.com/elwin013/parcel-plugin-static-files-copy 'parcel-plugin-static-files-copy') instead. You **must** copy [file pack](https://newdocs.phaser.io/docs/3.55.2/focus/Phaser.Loader.LoaderPlugin-pack) and [multiatlas](https://newdocs.phaser.io/docs/3.55.2/focus/Phaser.Loader.LoaderPlugin-multiatlas) assets this way.
 
 Package aliasing
 ----------------
