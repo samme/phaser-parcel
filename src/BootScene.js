@@ -1,5 +1,4 @@
 import Phaser from 'phaser';
-import images from './assets/*.png';
 
 export default class BootScene extends Phaser.Scene {
   constructor () {
@@ -10,11 +9,9 @@ export default class BootScene extends Phaser.Scene {
     const bg = this.add.rectangle(400, 300, 400, 30, 0x666666);
     const bar = this.add.rectangle(bg.x, bg.y, bg.width, bg.height, 0xffffff).setScale(0, 1);
 
-    console.table(images);
-
-    this.load.image('space', images.space);
-    this.load.image('logo', images.logo);
-    this.load.image('red', images.red);
+    this.load.image('space', 'space.png');
+    this.load.image('logo', 'logo.png');
+    this.load.image('red', 'red.png');
 
     this.load.on('progress', function (progress) {
       bar.setScale(progress, 1);
