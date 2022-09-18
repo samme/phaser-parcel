@@ -2,33 +2,13 @@ import Phaser from 'phaser';
 
 export default class PlayScene extends Phaser.Scene {
   constructor () {
-    super({
-      key: 'play',
-      physics: {
-        arcade: {
-          gravity: { y: 300 },
-          debug: false
-        }
-      }
-    });
+    super({ key: 'play' });
   }
 
   create () {
-    this.add.image(400, 300, 'space');
+    const map = this.make.tilemap({ key: 'map' });
 
-    const emitter = this.add.particles('red')
-      .createEmitter({
-        speed: 100,
-        scale: { start: 1, end: 0 },
-        blendMode: 'ADD'
-      });
-
-    const logo = this.physics.add.image(400, 100, 'logo')
-      .setVelocity(100, 200)
-      .setBounce(1, 1)
-      .setCollideWorldBounds(true);
-
-    emitter.startFollow(logo);
+    map.createLayer(0, map.addTilesetImage('cybernoid', 'tiles'), 0, 0);
 
     this.input.keyboard
       .on('keydown-R', function () {
