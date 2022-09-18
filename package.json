@@ -28,6 +28,7 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "parcel-plugin-static-files-copy": "^2.6.0"
   }
 }
